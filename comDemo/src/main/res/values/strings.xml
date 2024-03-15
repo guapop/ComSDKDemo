@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ComSdkDemo</string>
+    <string name="ssend">Send</string>
+    <string name="sscan">Scan</string>
+    <string name="text">send Text</string>
+    <string name="hex">send Hex</string>
+    <string name="Baudrate">Baud rate:</string>
+    <string name="serialport">Serial port:</string>
+    <string name="openn">Open</string>
+    <string name="pleases">Please open the serial port first</string>
+    <string name="portserror">The serial port failed to be opened</string>
+    <string name="portssuccess">The serial port success to be opened</string>
+    <string name="hasports">The device does not have a serial port available</string>
+    <string name="cmmd">Please enter a command</string>
+    <string name="please">There is an error in the data. please re-enter it</string>
+    <string name="callbackerror">Command processing failure callback</string>
+    <string name="callbacksuccess">Command processing successful callback</string>
+    <string name="qrpower">qrPower:</string>
+    <string name="scanLight">scanLight:</string>
+    <string name="getState">State</string>
+    <string name="closen">Close</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">串口Sdk示例</string>
+    <string name="ssend">发送</string>
+    <string name="sscan">扫描</string>
+    <string name="text">发送Text</string>
+    <string name="hex">发送Hex</string>
+    <string name="Baudrate">波特率:</string>
+    <string name="serialport">串口号:</string>
+    <string name="openn">打开</string>
+    <string name="pleases">请先打开串口</string>
+    <string name="hasports">该设备没有可用的串口</string>
+    <string name="portserror">串口打开失败</string>
+    <string name="portssuccess">串口打开成功</string>
+    <string name="cmmd">请输入命令</string>
+    <string name="please">数据有误,请重新输入</string>
+    <string name="callbackerror">命令处理失败回调</string>
+    <string name="callbacksuccess">命令处理成功回调</string>
+    <string name="qrpower">QR电源:</string>
+    <string name="scanLight">扫码灯:</string>
+    <string name="getState">状态</string>
+    <string name="closen">关闭</string>
+</resources>

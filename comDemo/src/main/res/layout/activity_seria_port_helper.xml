@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SerialPortHelperActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_scanlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_scanlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_qrpower"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/textViewscanlight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/scanLight"
+            />
+
+        <Button
+            android:id="@+id/bt_openScanLight"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/openn"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_send"/>
+
+        <Button
+            android:id="@+id/bt_closeScanLight"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/closen"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_scan"
+            />
+
+        <Button
+            android:id="@+id/bt_getState_ScanLight"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/getState"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_qrpower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/textViewpower"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/qrpower"
+         />
+
+        <Button
+            android:id="@+id/bt_openQrPower"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/openn"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_send"/>
+
+        <Button
+            android:id="@+id/bt_closeQrPower"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/closen"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_scan"
+            />
+
+        <Button
+            android:id="@+id/bt_getState_QrPower"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/getState"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/sp_serial"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_bote"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/sp_bote"></Spinner>
+
+
+    <Spinner
+        android:id="@+id/sp_bote"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_open"
+        app:layout_constraintStart_toEndOf="@+id/textView2"></Spinner>
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sp_bote"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/text" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/hex" />
+    </RadioGroup>
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/Baudrate"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_bote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sp_bote" />
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/serialport"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_bote"
+        app:layout_constraintStart_toEndOf="@+id/sp_bote"
+        app:layout_constraintTop_toTopOf="@+id/sp_bote" />
+
+    <EditText
+        android:background="#fff"
+        android:textSize="18sp"
+        android:id="@+id/ed_input"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:text="04e40400ff14"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_send"
+        app:layout_constraintEnd_toStartOf="@+id/bt_open"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_send" />
+
+    <Button
+        android:id="@+id/bt_open"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/openn"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_send"/>
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="20dp"
+        android:text="@string/ssend"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_scan"
+        />
+
+    <Button
+        android:id="@+id/bt_scan"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/sscan"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
