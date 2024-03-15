@@ -9,7 +9,7 @@
 # Usage
 1. Copy the comSDK.aar file to the libs folder under the project's Module
 
-    Dowload [comSDK.aar](https://github.com/guapop/ComSDKDemo/raw/master/comDemo/libs/ComSDK.aar)
+    Dowload [comSDK.aar](https://github.com/guapop/ComSDKDemo/raw/master/comDemo/libs/comSDK.aar)
 
 2. To add a dependency to your project, specify a dependency configuration such as implementation in the dependencies block of your module's build.gradle file.
 ```

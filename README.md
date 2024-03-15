@@ -9,7 +9,7 @@
 # 使用依赖
 1. 把 comSDK.aar 文件复制到项目Module下的libs文件夹中：
 
-    下载 [comSDK.aar](https://github.com/guapop/ComSDKDemo/raw/master/comDemo/libs/ComSDK.aar)
+    下载 [comSDK.aar](https://github.com/guapop/ComSDKDemo/raw/master/comDemo/libs/comSDK.aar)
 
 2. 在项目Module下的`build.gradle`文件中添加：
 ```
